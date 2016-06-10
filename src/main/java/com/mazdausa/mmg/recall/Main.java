@@ -22,6 +22,7 @@ public class Main {
     try {
     	String filePath = args[0];
 		input = new FileInputStream(filePath);
+		System.out.println("the path of the properties file:"+filePath);
 		// load a properties file
 			prop.load(input);
 			url = prop.getProperty("rcll_rest_end_point");
